@@ -8,12 +8,19 @@ Needs annotations in YOLO txt format
 
 ## Changes to the original code
 ### train.py
-line 200 <br/>
+line 200 
 
-| Old value     |    New value    |
-| ------------- |: -------------: | 
-| MLC<NC        |   MLC<=NC>      |
+| Old value | New value |
+| --- | --- |
+| MLC < NC | MLC <= NC |
 
+### utils/loss.py
+
+line 209: error float
+
+| Old value | New value |
+| --- | --- |
+| gain(3) | int(gain(3)) |
 
 
 
