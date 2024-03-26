@@ -1,0 +1,13 @@
+
+#train: D:/Deep_Learning/dataset_ship/ship_detection/train/images
+#val: D:/Deep_Learning/dataset_ship/ship_detectionval/images
+
+train: /home/cyprien/Documents/ShipDetection/FASC_Net0423/HRSID_JPG/train/
+val: /home/cyprien/Documents/ShipDetection/FASC_Net0423/HRSID_JPG/test
+
+
+# number of classes
+nc: 1
+
+# class names
+names: [ 'ship' ]
