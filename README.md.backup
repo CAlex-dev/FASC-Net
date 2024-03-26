@@ -11,10 +11,14 @@ Needs annotations in YOLO txt format
 line 200 <br/>
 
 | Old value     |    New value    |
-| ------------- |: -------------: | 
-| MLC<NC        |   MLC<=NC>      |
+| ------------- |: -------------: | ---------: |
+| MLC<NC        |        1        |      value |
+| Line 2        |        2        |      value |
+| 3 Online      |        3        |      value |
 
-
+<code>MLL<NC<code> <br/>
+New line 200<br/>
+<code>MLC<=NC<code><br/>
 
 
 
