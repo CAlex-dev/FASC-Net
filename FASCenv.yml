@@ -1,0 +1,21 @@
+name: FASCenv
+channels:
+  - defaults
+dependencies:
+  - python==3.7.7
+#  - cudatoolkit
+  - matplotlib
+  - numpy==1.20.0
+  - opencv
+  - packaging
+  - pandas
+#  - pytorch
+  - pyyaml
+  - scipy
+  - seaborn
+  - tensorboard
+#  - torchvision
+  - tqdm
+  - yaml
+  - pillow<9.0.0
+

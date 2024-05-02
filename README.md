@@ -22,6 +22,14 @@ line 209: error float
 | --- | --- |
 | gain(3) | int(gain(3)) |
 
+## Singularity container
+Build Singularity container:
+```
+sudo singularity build FASCNet_cont FASCNet.de
+```
 
+Run container with `--nv` for acces to GPU. Bind FASC-net folder to /work. 
 
-
+```
+singularity run --nv --nvccli --bind /PathTo/FASC-Net/:/work FASCNet_cont python train.py --cfg /work/models/FASC_NET.yaml
+```

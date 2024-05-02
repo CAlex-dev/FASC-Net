@@ -1,0 +1,27 @@
+
+Bootstrap: docker
+
+From: pytorch/pytorch:1.12.1-cuda11.3-cudnn8-devel
+
+%environment
+    export SINGULARITY_SHELL=/bin/bash
+    export HOME=/work
+    
+%files
+    FASCenv.yml
+
+%post   
+    apt update && apt install libgl1 libc6 -y
+ 
+    # config conda env
+    #conda clean --all -y
+    conda config --add channels conda-forge
+    conda env update -n base --file FASCenv.yml 
+    
+    
+    
+%runscript
+    python --version
+    export HOME=/work
+    cd $HOME
+    exec "$@"	
