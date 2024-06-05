@@ -1,7 +1,8 @@
 
 Bootstrap: docker
 
-From: pytorch/pytorch:1.12.1-cuda11.3-cudnn8-devel
+#From: pytorch/pytorch:1.12.1-cuda11.3-cudnn8-devel
+From: pytorch/pytorch:1.13.0-cuda11.6-cudnn8-devel
 
 %environment
     export SINGULARITY_SHELL=/bin/bash
@@ -12,11 +13,13 @@ From: pytorch/pytorch:1.12.1-cuda11.3-cudnn8-devel
 
 %post   
     apt update && apt install libgl1 libc6 -y
- 
+    #apt install python3.7 -y
     # config conda env
     #conda clean --all -y
     conda config --add channels conda-forge
     conda env update -n base --file FASCenv.yml 
+    #pip install torchvision==0.13 matplotlib numpy==1.20.0\
+  	#opencv packaging pandas pyyaml scipy seaborn tensorboard tqdm yaml 'pillow<9.0.0'
     
     
     
