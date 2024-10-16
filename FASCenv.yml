@@ -2,13 +2,11 @@ name: FASCenv
 channels:
   - defaults
 dependencies:
-  #- torchvision==0.13
-  #- pillow==9.0.1
-  #- python==3.7.7
+  - torchvision==0.13 
+  - python==3.7.7
 #  - cudatoolkit
   - matplotlib
-  - numpy
-  #- numpy==1.20.0
+  - numpy==1.20.0
   - opencv
   - packaging
   - pandas
@@ -18,8 +16,7 @@ dependencies:
   - seaborn
   - tensorboard
 #  - torchvision
-   #modif juin2024 to avoid module 'torchvision' has no attribute 'ops'
   - tqdm
   - yaml
-  #- pillow<9.0.0
-  - pillow
+  - pillow<9.0.0
+
