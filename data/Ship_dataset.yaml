@@ -2,9 +2,14 @@
 #train: D:/Deep_Learning/dataset_ship/ship_detection/train/images
 #val: D:/Deep_Learning/dataset_ship/ship_detectionval/images
 
-train: /work/LS-SSDD/train
-val: /work/LS-SSDD/test
+#train: /work/LS-SSDD/train
+#val: /work/LS-SSDD/test
 
+#train: /work/DSSDD/PNGImages/train
+#val: /work/DSSDD/PNGImages/test
+
+train: /work/OpenSARShip2/Training
+val: /work/OpenSARShip2/Validation
 
 # number of classes
 nc: 1
